@@ -3,7 +3,12 @@
 ## Install and Run with Docker Compose
 
 <!-- prettier-ignore -->
-- Download and start services ```docker compose -f .\docker-compose.yml up -d```
+- Download and start services
+
+```javascript
+docker compose -f .\docker-compose.yml up -d
+```
+
 - Check Status `docker images`, `docker ps`
 - Open integrated terminal within container `docker exec -it kafka /bin/sh`
 - Now within integrated terminal,
