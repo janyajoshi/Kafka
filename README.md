@@ -2,15 +2,19 @@
 
 ## Install and Run with Docker Compose
 
-<!-- prettier-ignore -->
 - Download and start services
 
-```javascript
+```cmd
 docker compose -f .\docker-compose.yml up -d
 ```
 
 - Check Status `docker images`, `docker ps`
-- Open integrated terminal within container `docker exec -it kafka /bin/sh`
+- Open integrated terminal within container
+
+```cmd
+docker exec -it kafka /bin/sh
+```
+
 - Now within integrated terminal,
   > - `cd opt`
   > - `cd kafka_2.13-2.8.1`
