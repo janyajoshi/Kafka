@@ -1,6 +1,6 @@
 # Kafka with Spring Boot
 
-## Install and Run with Docker Compose
+## Install and Run Kafka and Zookeeper with Docker Compose
 
 - Download and start services
 
@@ -17,11 +17,9 @@ docker exec -it kafka /bin/sh
 
 - Now within integrated terminal,
 
-  > - `cd opt`
-  > - `cd kafka_2.13-2.8.1`
-  > - `cd bin`
-  > - `ls`
-  > - Now we see scripts related to each functionality
+```cmd
+cd opt/kafka_2.13-2.8.1/bin;ls
+```
 
 - Create a new Topic, it will show _Created topic quickstart_ after successful creation
 
@@ -47,3 +45,7 @@ kafka-console-consumer.sh --topic quickstart --from-beginning --bootstrap-server
 - open a cluster
 - open topic properties
 - Change content type of both Key and Value to `String`
+
+## Sample Producer and Consumer
+
+- [Demo Service](sample-kafka-producer-consumer/)
