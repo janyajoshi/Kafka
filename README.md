@@ -1,5 +1,39 @@
 # Kafka with Spring Boot
 
+```mermaid
+classDiagram
+
+class Topic{
+    Partition 1 [M2, M3, M4, ...]
+    Partition 2 [M5, M6, M7, ...]
+    Partition 3 [M8, M9, ...]
+
+    Zookeeper() A wrapper used to manage Kafka
+    Offset() Different for each partition. Last consumed message number
+    Order() Order within each partition is Maintained
+}
+
+class Consumer-Group{
+    Consumer Instance 1
+    Consumer Instance 2
+    Consumer Instance 3
+    Consumer Instance 4
+
+    Group-Id() String
+    Consumer-Instances() Multiple Instances within Each \n consumer group will be auto-configured to read only a \n specific Partition. Will be configured at initial Load.
+}
+
+class Producer{
+    Topic
+    Key
+    Message
+    Custom-Producer-Partitioner() Destination Partition can be targeted
+}
+
+Producer --|> Topic: M10
+Topic --|> Consumer-Group: M1
+```
+
 ## Install and Run Kafka and Zookeeper with Docker Compose
 
 - Download and start services
