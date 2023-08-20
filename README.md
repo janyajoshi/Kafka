@@ -48,6 +48,6 @@ kafka-console-consumer.sh --topic quickstart --from-beginning --bootstrap-server
 
 ## Sample Producer and Consumer
 
-- [Producer Config](sample-kafka-producer-consumer/src/main/java/com/lazybeast/sampleKafka/config/KafkaConsumerConfig.java)
-- [Consumer Config](sample-kafka-producer-consumer/src/main/java/com/lazybeast/sampleKafka/config/KafkaProducerConfig.java)
+- [Producer Config](sample-kafka-producer-consumer/src/main/java/com/lazybeast/sampleKafka/config/KafkaProducerConfig.java)
+- [Consumer Config](sample-kafka-producer-consumer/src/main/java/com/lazybeast/sampleKafka/config/KafkaConsumerConfig.java)
 - [Demo Service](sample-kafka-producer-consumer/)
